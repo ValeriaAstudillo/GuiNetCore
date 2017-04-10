@@ -1,0 +1,111 @@
+﻿.dx-invalid-message > .dx-overlay-content {
+    color: white;
+    background-color: #f73808;
+}
+
+.dx-validationsummary-item {
+    color: #f73808;
+}
+
+.dx-invalid.dx-state-focused .dx-checkbox-container .dx-checkbox-icon {
+    border-color: #f73808;
+}
+
+.dx-invalid.dx-texteditor.dx-state-focused {
+    border-color: #f73808;
+}
+
+.dx-invalid.dx-texteditor .dx-texteditor-container:after {
+    pointer-events: none;
+    font-weight: bold;
+    background-color: #f73808;
+    color: #ffffff;
+    content: '!';
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.dx-invalid.dx-lookup .dx-lookup-field:after {
+    right: 38px;
+    pointer-events: none;
+    font-weight: bold;
+    background-color: #f73808;
+    color: #ffffff;
+    content: '!';
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.dx-lookup-validation-message {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 13px 20px 12px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    border-bottom: 1px solid lightgray;
+    color: #f73808;
+}
+
+.dx-invalid .dx-state-hover.dx-radiobutton .dx-radiobutton-icon:before {
+    border-color: #f73808;
+}
+
+.dx-invalid .dx-state-focused.dx-radiobutton .dx-radiobutton-icon:before {
+    border-color: #f73808;
+}
+
+.dx-invalid.dx-calendar.dx-state-focused {
+    border-color: #f73808;
+}
+
+.dx-field-value.dx-attention {
+    color: #f73808;
+    padding-left: 28px;
+}
+
+.dx-field-value.dx-attention:before {
+    pointer-events: none;
+    font-weight: bold;
+    background-color: #f73808;
+    color: #ffffff;
+    content: '!';
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.dx-validationsummary{
+    padding: 20px;
+}

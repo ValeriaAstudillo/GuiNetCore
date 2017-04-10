@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+
+    <meta charset="utf-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
+
+    <!--MXGRAPH-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/flow/styles/grapheditor.css">
+    <link rel="stylesheet" href="css/flow/flow.css">  
+    <script type="text/javascript">
+		// Parses URL parameters. Supported parameters are:
+		// - lang=xy: Specifies the language of the user interface.
+		// - touch=1: Enables a touch-style user interface.
+		// - storage=local: Enables HTML5 local storage.
+		// - chrome=0: Chromeless mode.
+        mxBasePath = 'src'
+		/*var urlParams = (function(url)
+		{
+			var result = new Object();
+			var idx = url.lastIndexOf('?');
+	
+			if (idx > 0)
+			{
+				var params = url.substring(idx + 1).split('&');
+				
+				for (var i = 0; i < params.length; i++)
+				{
+					idx = params[i].indexOf('=');
+					
+					if (idx > 0)
+					{
+						result[params[i].substring(0, idx)] = params[i].substring(idx + 1);
+					}
+				}
+			}
+			
+			return result;
+		})(window.location.href);*/
+	
+		// Default resources are included in grapheditor resources
+		mxLoadResources = false;
+	</script>
+    
+    <script type="text/javascript" src="redux/components/flow/www/js/Init.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/jscolor/jscolor.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/sanitizer/sanitizer.min.js"></script>
+	<script type="text/javascript" src="src/js/mxClient.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/EditorUi.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Editor.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Sidebar.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Graph.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Shapes.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Actions.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Menus.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Format.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Toolbar.js"></script>
+	<script type="text/javascript" src="redux/components/flow/www/js/Dialogs.js"></script>
+
+    <!--REPORTS-->
+    <link rel="stylesheet" href="css/JQUERY/jquery-ui.min.css" />
+    <script src="js/REPORTS/html/web-document-viewer.html" type="text/html">
+    </script>
+
+    <!--BEGIN STYLES DEVEXTREME-->
+    <link rel="dx-theme" data-theme="android5.light" href="css/DX/dx.android5.light.css" data-active="false" />
+    <link rel="stylesheet" type="text/css" href="css/DX/dx.spa.css" />
+    <link rel="stylesheet" type="text/css" href="css/DX/dx.common.css" />
+    <link rel="dx-theme" data-theme="generic.light" href="css/DX/dx.light.css" data-active="true" />
+    <link rel="dx-theme" data-theme="generic.contrast" href="css/DX/dx.contrast.css" />
+    <link rel="dx-theme" data-theme="generic.contrast.compact" href="css/DX/dx.contrast.compact.css" />
+    <link rel="dx-theme" data-theme="generic.dark.compact" href="css/DX/dx.dark.compact.css" />
+    <link rel="dx-theme" data-theme="generic.light.compact" href="css/DX/dx.light.compact.css" />
+    <!--<link rel="stylesheet" href="js/REPORTS/css/web-document-viewer-light.min.css" />-->
+    <!--END STYLES DEVEXTREME-->
+
+    <!--BEGIN STYLES CORE-->
+    <link rel="stylesheet" href="css/CORE/Site.css" />
+    <link rel="stylesheet" href="css/CORE/controles-dev-buttons.css" />
+    <link rel="stylesheet" href="css/CORE/controles-dev-grid.css" />
+    <link rel="stylesheet" href="css/CORE/dev-controls-validations.css" />
+    <link rel="stylesheet" type="text/css" href="app-desktop.css" />
+    <link rel="stylesheet" type="text/css" href="security-desktop.css" />
+    <link rel="stylesheet" type="text/css" href="css/flow/style.css" />
+    <!--END STYLES CORE-->
+
+    <!-- BEGIN METRONIC THEME STYLES -->
+    <link href="templates/metronic/global/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/admin/layout/css/toolbar.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="templates/metronic/admin/layout/css/custom.css" rel="stylesheet" type="text/css" />
+    <!--END THEME STYLES -->
+
+    <!--BEGIN THEMEFOREST STYLES-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="templates/themeforest/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="templates/themeforest/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="templates/themeforest/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="templates/themeforest/css/react-admin.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--END THEMEFOREST STYLES-->
+
+    <!--BEGIN BASIC SCRIPS-->
+    <script type="text/javascript" src="js/jquery/jquery-2.2.3.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/knockout/knockout-3.4.0.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="js/globalize/cldr.min.js"></script>
+    <script type="text/javascript" src="js/globalize/cldr/event.min.js"></script>
+    <script type="text/javascript" src="js/globalize/cldr/supplemental.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/number.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/date.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/message.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/currency.min.js"></script>
+    <!--END BASIC SCRIPTS-->
+
+    <!--BEGIN SCRIPTS DEVEXTREME-->
+    <script type="text/javascript" src="js/devextreme/dx.all.js"></script>
+    <script type="text/javascript" src="js/reports/js/dx-designer.min.js"></script>
+    <script type="text/javascript" src="js/reports/js/web-document-viewer.min.js"></script>
+    <!--END SCRIPTS DEVEXTREME-->
+
+    <!--BEGIN CONFIGURATION SCRIPTS-->
+    <script type="text/javascript" src="app.shared.config.js"></script>
+    <script type="text/javascript" src="kernel-shared.shared.config.js"></script>
+    <script type="text/javascript" src="kernel-react.shared.config.js"></script>
+    <script type="text/javascript" src="startup.shared.config.js"></script>
+    <script type="text/javascript" src="security.shared.config.js"></script>
+    <script type="text/javascript" src="app-desktop.js"></script>
+    <script type="text/javascript" src="security-desktop.js"></script>
+    <!--END CONFIGURATION SCRIPTS-->
+
+    <!--BEGIN SCRIPTS CORE-->
+    <script type="text/javascript" src="js/common/messages.js"></script>
+    <script type="text/javascript" src="js/common/global.js"></script>
+    <script type="text/javascript" src="js/common/iconos-core.js"></script>
+    <script type="text/javascript" src="js/comunication/comunication-handler.js"></script>
+    <script type="text/javascript" src="js/comunication/ajax-handler.js"></script>
+    <script type="text/javascript" src="js/comunication/transactions.js"></script>
+    <script type="text/javascript" src="js/cryptography/forge.min.js"></script>
+    <script type="text/javascript" src="js/cryptography/crypto3DES-handler.js"></script>
+    <script type="text/javascript" src="js/common/session-handler.js"></script>
+    <script type="text/javascript" src="js/common/error-handler.js"></script>
+    <script type="text/javascript" src="js/behavior/ecuador/date-es-EC.js"></script>
+    <script type="text/javascript" src="js/behavior/ecuador/core-behavior.js"></script>
+    <script type="text/javascript" src="js/behavior/ecuador/core-behavior-validator.js"></script>
+    <script type="text/javascript" src="js/sec/behavior-error.js"></script>
+    <script type="text/javascript" src="js/sec/messages.js"></script>
+    <script type="text/javascript" src="js/sec/transactions.js"></script>
+    <script type="text/javascript" src="js/flow/messages.js"></script>
+    <script type="text/javascript" src="js/flow/transactions.js"></script>
+    <script type="text/javascript" src="js/flow/behavior-error.js"></script>
+    <!--END SCRIPTS CORE-->
+
+    <!--BEGIN LAYOUTS-->
+    <link rel="stylesheet" type="text/css" href="layouts/Desktop/DesktopLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Desktop/DesktopLayout.html" />
+    <script type="text/javascript" src="layouts/Desktop/DesktopLayout.js"></script>
+    <!--END LAYOUTS-->
+
+    <!-- VIEWS -->
+    <link rel="dx-template" type="text/html" href="views/app/index.html" />
+
+</head>
+<body>
+    <section class="vbox" id="appContent"></section>
+</body>
+</html>
+<script>
+    $('#loadPanel').dxLoadPanel({ message: 'Cargando', visible: false, deferRendering: false, height: 'auto', shadingColor: 'rgba(10,10,10,0.5)' });
+    Kernel_Shared.plantilla = Kernel_Shared.template.Forest;
+    //initializeReport();
+</script>

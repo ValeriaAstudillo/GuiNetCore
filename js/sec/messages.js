@@ -1,0 +1,88 @@
+﻿/// <reference path="js/globalize.js" />
+/// <reference path="js/globalize.min.js" />
+/// <reference path="js/globalize/currency.min.js" />
+/// <reference path="js/globalize/date.min.js" />
+/// <reference path="js/globalize/message.min.js" />
+/// <reference path="js/globalize/number.min.js" />
+
+Globalize.loadMessages({
+    'en': {
+        validations: {
+            AdmissionDateLessThanDepartureDate: 'La Fecha Ingreso debe ser menor a la Fecha Salida.',
+            DateFromGreaterThanAdmissionDate: 'La Fecha Desde del Perfil debe ser mayor o igual a la fecha en la que ingresa el usuario.',
+            DateFromLessThanDepartureDate: 'La Fecha Desde del Perfil debe ser menor o igual a la fecha en la que sale el usuario.',
+            DateAtLessThanDepartureDate: 'La Fecha Hasta del Perfil debe ser menor o igual a la fecha en la que sale el usuario.',
+            UserHasProfileOffice: 'El usuario ya tiene ingresado este perfil en la oficina actual.',
+        },
+        tags: {
+            CodeProfile: 'Código Perfil',
+            NameProfile: 'Nombre Perfil',
+            CodeChannel: 'Código Canal',
+            UserName: 'User Name',
+            UserId: 'Id Usuario',
+            AdmissionDate: 'Fecha Ingreso',
+            DepartureDate: 'Fecha Salida',
+            ExpirationDate: 'Fecha Expiración (Clave)',
+            EffectiveDate: 'Fecha de Vigencia',
+            StateConnection: 'Estado Conexión',
+            NumberTriesLastAccess: 'Intentos Último Acceso',
+            NumberTriesCurrentAccess: 'Intentos Actual Acceso',
+            AccessStation: 'Estación Acceso',
+            LastStationAccess: 'Estación Último Acceso',
+            Online: 'Conectado',
+            Offline: 'Desconectado',
+            Lock: 'Bloqueado',
+            DateLastAccess: 'Fecha Último Acceso',
+            ManagementUsers: 'ADMINISTRACIÓN DE USUARIOS',
+            ManagementProfiles: 'ADMINISTRACIÓN DE PERFILES',
+            Action: 'ACCIÓN',
+            GenerateKey: 'Regenerar Clave',
+            AssignProfile: 'Asignar Perfil',
+            AssignTransaction: 'Asignar Transacción',
+            Unlock: 'Desbloquear',
+            UnlockUser: 'Desbloquear Usuario',
+            FilterUser: 'Filtros Usuario',
+            UserNotFound: 'Usuario No Encontrado',
+            UserNotLocked: 'Usuario no Bloqueado',
+            ProfileToAssign: 'Perfiles a Asignar',
+        },
+        messages: {
+            ProfileNotView: 'Perfil Sin Pantalla',
+            LoadingUsers: 'Cargando Usuarios',
+            SearchingUser: 'Consultando Usuario',
+            CreatingUser: 'Creando Usuario',
+            UpdatingUser: 'Actualizando Usuario',
+            LoadingProfiles: 'Cargando Perfiles',
+            LoadingProfilesUser: 'Cargando Perfiles del Usuario',
+            SearchingProfile: 'Consultando Perfil',
+            CreatingProfile: 'Creando Perfil',
+            UpdatingProfile: 'Actualizando Perfil',
+            LoadingScreens: 'Cargando Pantallas',
+            SearchingScreen: 'Consultando Pantalla',
+            CreatingScreen: 'Creando Pantalla',
+            UpdatingScreen: 'Actualizando Pantalla',
+            LoadingMenuOptions: 'Cargando Opciones de Menú',
+            CreatingMenu: 'Creando Opción de Menú',
+            UpdatingMenu: 'Actualizando Opción de Menú',
+            UnlockingUser: 'Desbloqueando Usuario',
+            GeneratingKey: 'Generando Clave',
+            CreatingUserProfile: 'Creando Usuario Perfil',
+            UpdatingUserProfile: 'Actualizando Usuario Perfil',
+            ChangingUser: 'Cambiando Usuario',
+            UnlockingScreen: 'Desbloqueando Pantalla',
+            NewUser: 'Nuevo Usuario',
+            CreateUserOK: 'Usuario Creado Correctamente',
+            SureGenerateKey: 'Seguro desea generar una nueva clave para el Usuario {0} con Identificación {1}',
+            SureUnlockUser: 'Seguro desea desbloquear al usuario {0}',
+            GenerateKeySuccess: 'Se ha generado correctamente la clave al usuario {0}. La nueva clave se envió al correo {1}',
+            UnlockUserSuccess: 'Se desbloqueó correctamente al usuario {0}',
+            UserNotFound: 'Usuario con {0} {1} no se encuentra registrado en la base',
+            UserNotLocked: 'El Usuario {0} no se encuentra bloqueado',
+            SelectAtLessProfile: 'Seleccione al menos un perfil para el usuario {0}',
+            InputOneProfile: 'Ingrese al menos un perfil.',
+            SearchProfile: 'Buscar un perfil',
+            UserHasProfileOffice: 'El usuario ya tiene ingresado este perfil en la oficina actual',
+            ScreenExist: 'El perfil ya tiene ingresado esta pantalla'
+        }
+    }
+})

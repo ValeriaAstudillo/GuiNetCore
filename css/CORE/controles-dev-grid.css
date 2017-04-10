@@ -1,0 +1,103 @@
+﻿.dx-pager .dx-pages .dx-selection, .dx-pager .dx-page-sizes .dx-selection {
+    color: black;
+    background-color: floralWhite;
+    font-weight: bold;
+}
+
+.dx-pager .dx-pages .dx-page {
+    padding: 8px 16px;
+    border: 1px solid lightgrey;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dx-datagrid .dx-row-alt > td {
+    background-color: ghostWhite;
+}
+
+.dx-datagrid-rowsview .dx-row.dx-selection > td, .dx-datagrid-rowsview .dx-row.dx-selection:hover > td {
+    background-color: bisque;
+    color: #232323;
+}
+
+.dx-datagrid-headers .dx-header-row > td {
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: floralWhite;
+    font-weight: bold;
+}
+
+/*TEXT BOX*/
+
+.dx-texteditor-input {
+    margin: 0;
+    padding: 7px 9px 8px;
+    background: white;
+    color: black;
+    font-size: 1em;
+}
+
+.dx-texteditor, .dx-texteditor-container {
+    border-radius: 6px;
+}
+
+.dx-state-focused.dx-texteditor, .dx-state-active.dx-texteditor {
+    border-color: cornflowerblue;
+    border-width: 2px;
+}
+
+/*SWITCH BOX*/
+
+
+.dx-switch {
+    width: 130px;
+    height: 30px;
+}
+
+.dx-switch-container {
+    height: 30px;
+    border: 1px solid rgba(221, 227, 236, 1);
+    width: 65px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+    .dx-switch-container:hover {
+        border-color: cornflowerblue;
+    }
+
+.dx-switch-on {
+    color: forestgreen;
+    font-size: 15px;
+    margin-top: 3px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.dx-switch-handle {
+    width: 30px;
+    height: 24px;
+    margin-left: -30px;
+}
+
+.dx-switch-off {
+    margin-left: -14px;
+    color: red;
+    font-size: 15px;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.on {
+    margin-left: 0px !important;
+}
+
+.off {
+    margin-left: -43px !important;
+}
+
+.dx-state-focused.dx-switch {
+    border-color: cornflowerblue;
+    border-width: 2px;
+}

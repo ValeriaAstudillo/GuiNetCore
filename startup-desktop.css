@@ -1,0 +1,26 @@
+﻿html, 
+body, 
+.dx-viewport {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content-login-omega{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid grey;
+    background-color: floralwhite;
+    border-radius: 10px;
+}
+
+.form-title{
+    text-align:center;
+    margin-bottom:20px;
+}

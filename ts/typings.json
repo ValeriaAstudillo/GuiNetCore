@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "debug": "registry:npm/debug#2.0.0+20160723033700"
+  },
+  "globalDependencies": {
+    "devextreme": "registry:dt/devextreme#15.2.10+20160602154958",
+    "jquery": "registry:dt/jquery#1.10.0+20160908203239",
+    "react": "registry:dt/react#0.14.0+20160920055104",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
+  }
+}

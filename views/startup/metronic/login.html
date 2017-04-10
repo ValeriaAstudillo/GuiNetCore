@@ -1,0 +1,20 @@
+﻿<div data-options="dxView : { name: 'login', title: 'Iniciar Sesión'} ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background font-style-gray">
+        <div data-bind="dxScrollView: { }">
+            <!-- BEGIN LOGIN FORM -->
+            <form class="login-form">
+                <div data-bind="dxScrollView: {}">
+                    <div id="loginContent"></div>
+                    <!-- Componentes React -->
+                    <!-- /*Change to src="../../../dist/app.js" if you want to try de app before build the final webpack*/  -->
+                    <!-- /*Change to src="../../../bundle/startup/app.js" if you have already built the final webpack*/  -->
+                    <script src="../../../bundle/startup/app.js"></script>  
+                </div>
+            </form>
+            <!-- END LOGIN FORM -->
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    Kernel_Shared.plantilla = Kernel_Shared.template.Forest;
+</script>

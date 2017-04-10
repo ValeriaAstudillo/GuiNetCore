@@ -1,0 +1,62 @@
+﻿.toolbar{
+    width: 100%; 
+    height: 60px; 
+    position: fixed; 
+    background-color: rgb(54, 65, 80);
+    margin-left: 235px;
+    z-index: 100;
+}
+
+.toolbar-item {
+    padding: 19px;
+    width: auto;
+    color: white;
+    cursor: pointer;
+    top: 18px;
+    position: relative;
+}
+
+
+.toolbar-item:hover {
+    background-color: #3e4b5c;
+    text-decoration: none;
+    color:white;
+    border: 2px solid #1caf9a;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.toolbar-item-disabled{
+    padding: 19px;
+    width: auto;
+    color: white;
+    cursor: pointer;
+    top: 18px;
+    position: relative;
+    cursor:not-allowed;
+    opacity:0.5;
+}
+
+.toolbar-item-disabled:hover{
+    text-decoration:none;
+    cursor:not-allowed !important;
+    color:white;
+}
+
+.toolbar-item > i, .toolbar-item-disabled > i{
+    font-size: 20px;
+    padding-right:5px; 
+}
+
+.toolbar-item > span, .toolbar-item-disabled > span{
+    font-size: 16px;
+}
+
+
+.toolbar-sidebar-closed{
+    margin-left:45px !important;
+}
+
+.toolbar-item-hidden{
+    display:none;
+}

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Inicio</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!--BEGIN STYLES DEVEXTREME-->
+    <link rel="dx-theme" data-theme="android5.light" href="css/devextreme/dx.android5.light.css" data-active="false"/>
+    <link rel="stylesheet" type="text/css" href="css/devextreme/dx.spa.css" />
+    <link rel="stylesheet" type="text/css" href="css/devextreme/dx.common.css" />
+    <link rel="dx-theme" data-theme="generic.light" href="css/devextreme/dx.light.css" data-active="true" />
+    <link rel="dx-theme" data-theme="generic.contrast" href="css/devextreme/dx.contrast.css" />
+    <link rel="dx-theme" data-theme="generic.contrast.compact" href="css/devextreme/dx.contrast.compact.css" />
+    <link rel="dx-theme" data-theme="generic.dark.compact" href="css/devextreme/dx.dark.compact.css" />
+    <link rel="dx-theme" data-theme="generic.light.compact" href="css/devextreme/dx.light.compact.css" />
+    <!--END STYLES DEVEXTREME-->
+
+    <!--BEGIN STYLES CORE-->
+    <link rel="stylesheet" type="text/css" href="css/core/controles-dev-buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/core/controles-dev-grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/core/dev-controls-validations.css" />
+    <link rel="stylesheet" type="text/css" href="css/core/Site.css" />
+    <link rel="stylesheet" type="text/css" href="startup-desktop.css" />
+    <!--END STYLES CORE-->
+
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="templates/metronic/admin/pages/css/login.css" />
+    <!-- END PAGE LEVEL SCRIPTS -->
+    
+    <!-- BEGIN THEME STYLES -->
+    <link href="templates/metronic/global/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="templates/metronic/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="templates/metronic/admin/layout/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <!--BEGIN BASIC SCRIPS-->
+    <script type="text/javascript" src="js/jquery/jquery-2.2.3.js"></script>
+    <script type="text/javascript" src="js/knockout/knockout-3.4.0.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="js/globalize/cldr.min.js"></script>
+    <script type="text/javascript" src="js/globalize/cldr/event.min.js"></script>
+    <script type="text/javascript" src="js/globalize/cldr/supplemental.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/number.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/date.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/message.min.js"></script>
+    <script type="text/javascript" src="js/globalize/globalize/currency.min.js"></script>
+    <!--END BASIC SCRIPTS-->
+
+    <!--BEGIN SCRIPTS DEVEXTREME-->
+    <script type="text/javascript" src="js/devextreme/dx.all.js"></script>
+    <!--END SCRIPTS DEVEXTREME-->
+
+    <!--BEGIN CONFIGURATION SCRIPTS-->
+    <script type="text/javascript" src="startup.shared.config.js"></script>
+    <script type="text/javascript" src="startup.config.js"></script>
+    <script type="text/javascript" src="kernel-shared.shared.config.js"></script>
+    <script type="text/javascript" src="startup-desktop.js"></script>
+    <!--BEGIN CONFIGURATION SCRIPTS-->
+
+    <!--BEGIN SCRIPTS CORE-->
+    <script type="text/javascript" src="js/common/messages.js"></script>
+    <script type="text/javascript" src="js/startup/messages.js"></script>
+    <script type="text/javascript" src="js/common/global.js"></script>
+    <script type="text/javascript" src="js/common/error-handler.js"></script>
+    <script type="text/javascript" src="js/comunication/comunication-handler.js"></script>
+    <script type="text/javascript" src="js/comunication/ajax-handler.js"></script>
+    <script type="text/javascript" src="js/startup/transactions.js"></script>
+    <script type="text/javascript" src="js/comunication/transactions.js"></script>
+    <script type="text/javascript" src="js/cryptography/forge.min.js"></script>
+    <script type="text/javascript" src="js/cryptography/crypto3DES-handler.js"></script>
+    <script type="text/javascript" src="js/startup/behavior-error.js"></script>
+
+    <script type="text/javascript" src="js/common/iconos-core.js"></script>
+    <script type="text/javascript" src="js/common/session-handler.js"></script>
+    <script type="text/javascript" src="js/behavior/ecuador/date-es-EC.js"></script>
+    <script type="text/javascript" src="js/behavior/ecuador/core-behavior.js"></script>
+    <script type="text/javascript" src="js/behavior/ecuador/core-behavior-validator.js"></script>
+    <!--END SCRIPTS CORE-->
+
+    <!--BEGIN LAYOUTS-->
+    <script type="text/javascript" src="layouts/Desktop/DesktopLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="layouts/Desktop/DesktopLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Desktop/DesktopLayout.html" />
+    <!--END LAYOUTS-->
+
+    <!--BEGIN VIEWS -->
+    <link rel="dx-template" type="text/html" href="views/startup/metronic/login.html" />
+    <!--END VIEWS -->
+
+
+</head>
+<body class="login">
+    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+    <div class="menu-toggler sidebar-toggler"></div>
+    <!-- END SIDEBAR TOGGLER BUTTON -->
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="templates/metronic/admin/layout/img/logo-big.png" alt="" />
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div>
+        <div class="dx-viewport"></div>
+        <div id="loadPanel"></div>
+    </div>
+
+    <!-- END LOGIN -->
+
+    <div class="copyright">
+        2016 © Portales Distributors INC. Pagos Móviles.
+    </div>
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="templates/metronic/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="templates/metronic/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="templates/metronic/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="templates/metronic/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="templates/metronic/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <!--<script src=".templates/metronic/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>-->
+    <!-- END PAGE LEVEL PLUGINS -->
+    
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="templates/metronic/admin/layout/scripts/metronic.js" type="text/javascript"></script>
+    <script src="templates/metronic/admin/layout/scripts/layout.js" type="text/javascript"></script>
+    <script src="templates/metronic/admin/layout/scripts/demo.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+
+    <script>
+        var urlInicial = '/'
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            Demo.init();
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+</body>
+</html>
+<script>
+    $('#loadPanel').dxLoadPanel({ message: 'Cargando', visible: false, deferRendering: false, height: 'auto', shadingColor: 'rgba(10,10,10,0.5)' });
+</script>

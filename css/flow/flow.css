@@ -1,0 +1,24 @@
+input:required {
+    background: white;
+    border:1px solid #999;
+}
+/*input:optional {
+    background:hsl(300, 50%, 90%);
+    border:1px dotted hsl(180, 50%, 90%);
+}*/
+input:valid {
+    background:white;  
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 92%);
+}
+.help {
+    display:none;
+    font-size:90%;
+}
+input:focus + .help {
+    display:inline-block;
+}

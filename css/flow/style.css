@@ -1,0 +1,20 @@
+.title-grid {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    font-size: 15px;
+    border: 1px solid #2a6496;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    padding-left: 10px;
+    background-color: transparent;
+    color: #2a6496;
+    margin-top: 15px;
+    margin-bottom:15px
+}
+
+.title-grid > label{
+    font-weight: bold;
+    text-transform: none;
+    font-style: italic;
+}
