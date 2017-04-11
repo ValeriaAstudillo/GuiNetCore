@@ -96,7 +96,7 @@ export default class Core extends React.Component<any, any>{
                                 <div id="swEsActivo" style={{ display: 'block' }}></div>
                             </div>
                             <div className="col-lg-6">
-                                <label className="tags-form">Es general</label>
+                                <label className="tags-form">Es General</label>
                                 <div id="swEsGeneral" style={{ display: 'block' }}></div>
                             </div>
                         </div>
@@ -181,6 +181,15 @@ export default class Core extends React.Component<any, any>{
         $('#popupDatosPerfil').dxPopup('option', 'visible', true);
     }
 
+    editProfile(){
+        this.setState({isEdit:true});
+        $('#popupDatosPerfil').dxPopup('option', 'visible', true);
+        changePropertyControl('#txtNombreperfil', typeControl.TextBox, 'value', currentProfile.nombre);
+        changePropertyControl('#txtCodigoPerfil', typeControl.TextBox, 'value', currentProfile.codigoPerfil);
+        changePropertyControl('#swEsActivo', typeControl.Switch, 'value', currentProfile.esActivo);
+        changePropertyControl('#swEsGeneral', typeControl.Switch, 'value', currentProfile.esGeneral);
+    }
+
     saveProfile(){    
         debugger;
         if(this.state.isEdit){
@@ -245,8 +254,9 @@ export default class Core extends React.Component<any, any>{
         $('#popupDatosPerfil').dxPopup('option', 'visible', false);
     }
 
+    /*  ----------- EVENTS METHODS -------------    */
+
     selectionEvtGrdProfiles(data: any) {
-        debugger;
         var item = data.selectedRowsData[0];
         if (item != null) {
             changeStateToolBar(toolBarButtons.Edit, stateToolBar.enabled);       
@@ -255,13 +265,5 @@ export default class Core extends React.Component<any, any>{
             changeStateToolBar(toolBarButtons.Edit, stateToolBar.disabled);
         }
     }
-
-    editProfile(){
-        this.setState({isEdit:true});
-        $('#popupDatosPerfil').dxPopup('option', 'visible', true);
-        changePropertyControl('#txtNombreperfil', typeControl.TextBox, 'value', currentProfile.nombre);
-        changePropertyControl('#txtCodigoPerfil', typeControl.TextBox, 'value', currentProfile.codigoPerfil);
-        changePropertyControl('#swEsActivo', typeControl.Switch, 'value', currentProfile.esActivo);
-        changePropertyControl('#swEsGeneral', typeControl.Switch, 'value', currentProfile.esGeneral);
-    }
+    
 }
