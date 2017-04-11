@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.tsx",
   "scripts": {
-    "build": "webpack --config config/webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "start": "node server.js",
     "webpack": "webpack"
   },
