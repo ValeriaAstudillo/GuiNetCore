@@ -48,11 +48,6 @@ export default class Core extends React.Component<any, any>{
         this.mapProfile = this.mapProfile.bind(this);
     }
 
-    /*componentWillMount: is called before the render method is executed.
-    */
-    componentWillMount() {
-    }
-
     /*render: The render() method is required always.
         - Returns the needed component markup.
         - Returns a tree of React components that will eventually render to HTML.
@@ -270,14 +265,3 @@ export default class Core extends React.Component<any, any>{
         changePropertyControl('#swEsGeneral', typeControl.Switch, 'value', currentProfile.esGeneral);
     }
 }
-
-  
-
-/*REDUX METHODS*/
-/*If a component have to connect to any reducer of the store, uncomment the mapStateToProps function*/
-
-/*function mapStateToProps(state: any) {
-    return {
-        example: state.example
-    }
-}*/
