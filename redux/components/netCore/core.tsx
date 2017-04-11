@@ -48,6 +48,10 @@ export default class Core extends React.Component<any, any>{
         this.mapProfile = this.mapProfile.bind(this);
     }
 
+    componentWillMount(){
+        
+    }
+
     /*render: The render() method is required always.
         - Returns the needed component markup.
         - Returns a tree of React components that will eventually render to HTML.
