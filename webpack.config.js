@@ -5,9 +5,9 @@ module.exports = {
   devtool: 'eval',
   entry: [
     // Add the react hot loader entry point - in reality, you might only want this in your dev config
-    'react-hot-loader/patch',
+    /*'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:4848',
-    'webpack/hot/only-dev-server',
+    'webpack/hot/only-dev-server',*/
     './redux/components/index.tsx'
   ],
   output: {
@@ -23,9 +23,9 @@ module.exports = {
     loaders: [
       { test: /\.tsx?$/, loaders: ['babel', 'ts-loader'] }
     ]
-  },
+  }/*,
   plugins: [
     // Add the HMR plugin
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ]*/
 };
