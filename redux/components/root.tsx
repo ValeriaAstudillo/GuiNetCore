@@ -34,24 +34,26 @@ export default class Root extends React.Component<any, any> {
 
     render() {        
         return (
-            <Provider store={store}>
-                <Router history={history} >
-                    <Route path='/' component={App}>                    
-                        <Route path='/home' component={Home}/>
-                        <Route path='/profileUser' component={ProfileUser} pageName="Perfil de usuario" pageDescription="Información destacada de usuario" />
-                        <Route path='/changeOfficeProfile' component={ChangeOfficeProfile} pageName="Oficina o perfil" pageDescription="Cambio de oficina o perfil" />
-                        <Route path='/changeUser' component={ChangeUser} pageName="Usuario" pageDescription="Cambio de usuario" />
-                        <Route path='/changePassword' component={ChangePassword} pageName="Contraseña" pageDescription="Cambio de contraseña" />
-                        <Route path='/unlockScreen' component={UnlockScreen} pageName="Bloqueo de pantalla" pageDescription="Bloquear su pantalla" />
-                        <Route path='/signOut' component={SignOut} pageName="Cerrar Sesión" pageDescription="Cerrar sesión de usuario vigente" />
-                        <Route path='/profiles' component={Profiles} pageName="Administración" pageDescription="Administración de profiles" />
-                        <Route path='/users' component={Users} pageName="Administración" pageDescription="Administración de usuarios" />
-                        <Route path='/views' component={Views} pageName="Administración" pageDescription="Administración de vistas" />
-                        <Route path='/core' component={Core} pageName="Administración" pageDescription="Administración de perfiles" />
-                        <Route path='*' component={NotFound} />                        
-                    </Route>
-                </Router>
-            </Provider>
+            <div>
+                <Provider store={store}>
+                    <Router history={history} >
+                        <Route path='/' component={App}>                    
+                            <Route path='/home' component={Home}/>
+                            <Route path='/profileUser' component={ProfileUser} pageName="Perfil de usuario" pageDescription="Información destacada de usuario" />
+                            <Route path='/changeOfficeProfile' component={ChangeOfficeProfile} pageName="Oficina o perfil" pageDescription="Cambio de oficina o perfil" />
+                            <Route path='/changeUser' component={ChangeUser} pageName="Usuario" pageDescription="Cambio de usuario" />
+                            <Route path='/changePassword' component={ChangePassword} pageName="Contraseña" pageDescription="Cambio de contraseña" />
+                            <Route path='/unlockScreen' component={UnlockScreen} pageName="Bloqueo de pantalla" pageDescription="Bloquear su pantalla" />
+                            <Route path='/signOut' component={SignOut} pageName="Cerrar Sesión" pageDescription="Cerrar sesión de usuario vigente" />
+                            <Route path='/profiles' component={Profiles} pageName="Administración" pageDescription="Administración de profiles" />
+                            <Route path='/users' component={Users} pageName="Administración" pageDescription="Administración de usuarios" />
+                            <Route path='/views' component={Views} pageName="Administración" pageDescription="Administración de vistas" />
+                            <Route path='/core' component={Core} pageName="Administración" pageDescription="Administración de perfiles" />
+                            <Route path='*' component={NotFound} />                        
+                        </Route>
+                    </Router>
+                </Provider>
+            </div>
         )
     }
 }
