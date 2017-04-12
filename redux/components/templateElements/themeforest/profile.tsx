@@ -23,37 +23,39 @@ export default class Profile extends React.Component<any, any> {
     render() {
         var aux: any = null;
         return (
-            <Nav >
-                <Dropdown id="dropdown-custom-1" style={{ position: 'absolute', right:10}}>
-                    <Dropdown.Toggle>
-                        <span className="thumb-sm avatar pull-left" >
-                            <img src="../images/icons/Supervisores_128.png"/> 
-                        </span>
-                        { SesionWeb().Usuario.PrimerNombre + ' ' + SesionWeb().Usuario.SegundoNombre + ' ' + SesionWeb().Usuario.ApellidoPaterno + ' ' + SesionWeb().Usuario.ApellidoMaterno + ' '} 
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        <li>
-                            <Link style={{ textAlign: 'right' }} to="/profileUser">{CORE_TAG('MyProfile') }</Link>
-                        </li>
-                        <li>
-                            <Link style={{ textAlign: 'right' }} to="/changeOfficeProfile">{CORE_TAG('ChangeOfficeProfile') }</Link>
-                        </li>
-                        <li>
-                            <Link style={{ textAlign: 'right' }} to="/changeUser">{CORE_TAG('ChangeUser') }</Link>
-                        </li>
-                        <li>
-                            <Link style={{ textAlign: 'right' }} to="/changePassword">{CORE_TAG('ChangePassword') }</Link>
-                        </li>
-                        <li className="divider"></li>
-                        <li>
-                            <Link style={{ textAlign: 'right' }} to="/unlockScreen">{CORE_TAG('LockScreen') }</Link>
-                        </li>
-                        <li>
-                            <Link style={{ textAlign: 'right' }} to="/signOut">{CORE_TAG('SignOut') }</Link>
-                        </li>
-                    </Dropdown.Menu>
-                </Dropdown>
-            </Nav>            
+            <div>
+                <Nav>
+                    <Dropdown id="dropdown-custom-1" style={{ position: 'absolute', right:10}}>
+                        <Dropdown.Toggle>
+                            <span className="thumb-sm avatar pull-left" >
+                                <img src="../images/icons/Supervisores_128.png"/> 
+                            </span>
+                            { SesionWeb().Usuario.PrimerNombre + ' ' + SesionWeb().Usuario.SegundoNombre + ' ' + SesionWeb().Usuario.ApellidoPaterno + ' ' + SesionWeb().Usuario.ApellidoMaterno + ' '} 
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <li>
+                                <Link style={{ textAlign: 'right' }} to="/profileUser">{CORE_TAG('MyProfile') }</Link>
+                            </li>
+                            <li>
+                                <Link style={{ textAlign: 'right' }} to="/changeOfficeProfile">{CORE_TAG('ChangeOfficeProfile') }</Link>
+                            </li>
+                            <li>
+                                <Link style={{ textAlign: 'right' }} to="/changeUser">{CORE_TAG('ChangeUser') }</Link>
+                            </li>
+                            <li>
+                                <Link style={{ textAlign: 'right' }} to="/changePassword">{CORE_TAG('ChangePassword') }</Link>
+                            </li>
+                            <li className="divider"></li>
+                            <li>
+                                <Link style={{ textAlign: 'right' }} to="/unlockScreen">{CORE_TAG('LockScreen') }</Link>
+                            </li>
+                            <li>
+                                <Link style={{ textAlign: 'right' }} to="/signOut">{CORE_TAG('SignOut') }</Link>
+                            </li>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </Nav>   
+            </div>         
         )
     }
 }
